@@ -20,7 +20,7 @@ steps:
     location: 'Central US'
     templateLocation: 'Linked artifact'
     csmFile: 'CreateWebApp/azuredeploy.json'
-    overrideParameters: '-projectName [EnterAProjectName] -linkedTemplateUri [EnterTheLinkedTemplateURL]'
+    overrideParameters: -projectName pipelinedemo -linkedTemplateUri https://github.com/ntdconsulting/AzureRmPipeline-repo
     deploymentMode: 'Incremental'
     deploymentName: 'DeployPipelineTemplate'
 
